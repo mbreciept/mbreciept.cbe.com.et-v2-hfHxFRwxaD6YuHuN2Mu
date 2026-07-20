@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +36,7 @@
         .logo { 
             position: absolute;
             left: 28px;
-            width: 52px; /* Increased logo size */
+            width: 52px; 
             height: auto; 
         }
         .header-content {
@@ -155,13 +154,13 @@
         .footer-box { 
             border: 1px solid #dcdcdc; 
             background: #f8f9fa; 
-            padding: 8px 16px; /* Decreased height/padding to match reference image */
+            padding: 8px 16px; 
             display: flex; 
-            justify-content: space-between; 
+            justify-content: flex-start; /* Aligned content left/center properly to keep QR inside */
             align-items: center; 
             box-sizing: border-box;
             position: relative;
-            min-height: 48px; /* Reduced min-height */
+            min-height: 48px; 
         }
         .amount-word { 
             position: absolute;
@@ -170,17 +169,23 @@
             text-align: center;
             font-size: 11px;
             line-height: 1.3;
+            font-weight: bold; /* Made font bold as requested */
         }
         .amount-word strong {
             font-size: 11px;
             color: #111;
             font-weight: bold;
         }
+        .amount-word span {
+            font-weight: bold; /* Ensure text value is bold */
+        }
         .qr-wrapper {
             margin-left: auto;
+            position: relative;
+            z-index: 5;
         }
         .qr { 
-            width: 48px; /* Decreased QR size to fit compact box */
+            width: 48px; 
             height: 48px;
             display: block;
         }
@@ -203,9 +208,9 @@
             font-size: 10px;
         }
 
-        /* Download Button Container - Positioned precisely at the very bottom as requested */
+        /* Download Button Container - Positioned significantly lower at the bottom */
         .btn-container {
-            margin: 390px 0 20px 0; /* Pushed button down to match the second reference image */
+            margin: 550px 0 20px 0; 
             text-align: center;
         }
         .download-btn {
